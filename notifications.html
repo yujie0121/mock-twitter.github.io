@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>通知 - 微博克隆</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/i18n.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 左侧导航栏 -->
+        <aside class="sidebar left-sidebar">
+            <div class="logo">
+                <i class="fab fa-twitter"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> 首页</a></li>
+                    <li><a href="explore.html"><i class="fas fa-hashtag"></i> 探索</a></li>
+                    <li class="active"><a href="notifications.html"><i class="far fa-bell"></i> 通知</a></li>
+                    <li><a href="messages.html"><i class="far fa-envelope"></i> 消息</a></li>
+                    <li><a href="bookmarks.html"><i class="far fa-bookmark"></i> 书签</a></li>
+                    <li><a href="lists.html"><i class="fas fa-list-alt"></i> 列表</a></li>
+                    <li><a href="profile.html"><i class="far fa-user"></i> 个人资料</a></li>
+                    <li><a href="more.html"><i class="fas fa-ellipsis-h"></i> 更多</a></li>
+                    <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> 登录页面</a></li>
+                </ul>
+            </nav>
+            <button class="tweet-btn">发微博</button>
+            <div class="user-profile">
+                <div class="user-avatar emoji-avatar">
+                    <span class="emoji">😀</span>
+                </div>
+                <div class="user-info">
+                    <h4>用户名</h4>
+                    <p>@username</p>
+                </div>
+                <i class="fas fa-ellipsis-h"></i>
+            </div>
+        </aside>
+
+        <!-- 中间内容区域 -->
+        <main class="main-content">
+            <header class="main-header">
+                <h2>通知</h2>
+                <div class="tabs">
+                    <div class="tab active">全部</div>
+                    <div class="tab">提及</div>
+                </div>
+                <div class="night-mode-toggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+                <div class="notification-settings">
+                    <i class="fas fa-cog"></i>
+                </div>
+            </header>
+
+            <!-- 通知列表 -->
+            <div class="notifications-list">
+                <div class="notification-item">
+                    <div class="notification-icon like">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="emoji-avatar">
+                        <span class="emoji">🤩</span>
+                    </div>
+                    <div class="notification-content">
+                        <p><span class="user-link">张三</span> 喜欢了你的微博</p>
+                        <p class="notification-tweet">"人工智能的未来发展将如何改变我们的生活方式？#AI #科技"</p>
+                        <span class="notification-time">30分钟前</span>
+                    </div>
+                </div>
+
+                <div class="notification-item">
+                    <div class="notification-icon follow">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <div class="emoji-avatar">
+                        <span class="emoji">😎</span>
+                    </div>
+                    <div class="notification-content">
+                        <p><span class="user-link">科技日报</span> 关注了你</p>
+                        <span class="notification-time">2小时前</span>
+                    </div>
+                </div>
+
+                <div class="notification-item">
+                    <div class="notification-icon retweet">
+                        <i class="fas fa-retweet"></i>
+                    </div>
+                    <div class="emoji-avatar">
+                        <span class="emoji">🤓</span>
+                    </div>
+                    <div class="notification-content">
+                        <p><span class="user-link">李四</span> 转发了你的微博</p>
+                        <p class="notification-tweet">"分享一篇关于React Hooks的好文章 #前端开发"</p>
+                        <span class="notification-time">昨天</span>
+                    </div>
+                </div>
+
+                <div class="notification-item">
+                    <div class="notification-icon reply">
+                        <i class="fas fa-comment"></i>
+                    </div>
+                    <div class="emoji-avatar">
+                        <span class="emoji">🧐</span>
+                    </div>
+                    <div class="notification-content">
+                        <p><span class="user-link">王五</span> 回复了你的微博</p>
+                        <p class="notification-tweet">"这个观点很有见解，我也认为数据隐私将是未来科技发展的重要方向。"</p>
+                        <span class="notification-time">2天前</span>
+                    </div>
+                </div>
+
+                <div class="notification-item with-preview">
+                    <div class="user-avatar emoji-avatar">
+                        <span class="emoji">📸</span>
+                    </div>
+                    <div class="notification-content">
+                        <p><span class="user-link">摄影爱好者</span> 发布了新微博，你可能感兴趣</p>
+                        <span class="notification-time">2小时前</span>
+                        <div class="notification-preview">
+                            <p>分享一张今天拍摄的日落照片，无滤镜，原片 #摄影 #日落</p>
+                            <img src="https://picsum.photos/seed/sunset/500/300" alt="日落照片">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- 右侧栏 -->
+        <aside class="sidebar right-sidebar">
+            <!-- 搜索框 -->
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="搜索微博">
+            </div>
+            
+            <!-- 热门话题 -->
+            <div class="trends-box">
+                <h3>热门话题</h3>
+                <div class="trend-item">
+                    <span class="trend-category">科技 · 热门</span>
+                    <h4>#人工智能</h4>
+                    <span class="trend-count">2.5万条微博</span>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <div class="trend-item">
+                    <span class="trend-category">娱乐 · 热门</span>
+                    <h4>#电影推荐</h4>
+                    <span class="trend-count">1.8万条微博</span>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <div class="trend-item">
+                    <span class="trend-category">体育 · 热门</span>
+                    <h4>#NBA总决赛</h4>
+                    <span class="trend-count">3.2万条微博</span>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <a href="#" class="show-more">显示更多</a>
+            </div>
+            
+            <!-- 页脚 -->
+            <footer class="footer">
+                <a href="#">服务条款</a>
+                <a href="#">隐私政策</a>
+                <a href="#">Cookie政策</a>
+                <a href="#">无障碍</a>
+                <a href="#">广告信息</a>
+                <a href="#">更多...</a>
+                <p>© 2023 微博克隆</p>
+            </footer>
+        </aside>
+    </div>
+    
+    <script src="js/main-fixed.js"></script>
+    <script src="js/theme-manager.js"></script>
+    <script src="js/i18n.js"></script>
+</body>
+</html> 

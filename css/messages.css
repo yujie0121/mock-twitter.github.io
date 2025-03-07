@@ -1,0 +1,125 @@
+/* 消息页面样式 */
+.messages-container {
+    margin-top: 10px;
+}
+
+.message-item {
+    display: flex;
+    padding: 15px;
+    border-bottom: 1px solid #eff3f4;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+body.dark-mode .message-item {
+    border-color: #38444d;
+}
+
+.message-item:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+body.dark-mode .message-item:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.message-item.unread {
+    background-color: rgba(29, 161, 242, 0.1);
+}
+
+body.dark-mode .message-item.unread {
+    background-color: rgba(29, 161, 242, 0.15);
+}
+
+.message-content {
+    flex: 1;
+    margin-left: 12px;
+}
+
+.message-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+.message-header h4 {
+    font-weight: 700;
+    margin-right: 4px;
+}
+
+.message-header .username,
+.message-header .message-time {
+    color: #536471;
+    font-size: 14px;
+}
+
+body.dark-mode .message-header .username,
+body.dark-mode .message-header .message-time {
+    color: #8899a6;
+}
+
+.message-preview {
+    color: #536471;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+body.dark-mode .message-preview {
+    color: #8899a6;
+}
+
+.message-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.message-actions i {
+    font-size: 18px;
+    color: #1da1f2;
+    cursor: pointer;
+}
+
+.message-filters {
+    background-color: #ffffff;
+    border-radius: 16px;
+    margin-bottom: 16px;
+    padding: 15px;
+}
+
+body.dark-mode .message-filters {
+    background-color: #192734;
+}
+
+.filter-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.filter-item:hover {
+    background-color: rgba(29, 161, 242, 0.1);
+}
+
+.filter-item.active {
+    background-color: rgba(29, 161, 242, 0.1);
+    color: #1da1f2;
+}
+
+.filter-item i {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.filter-item .badge {
+    background-color: #1da1f2;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 10px;
+    font-size: 12px;
+    margin-left: auto;
+} 

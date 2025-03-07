@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>话题: #人工智能 - 微博克隆</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="css/topic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 左侧导航栏 - 与主页相同 -->
+        <aside class="sidebar left-sidebar">
+            <div class="logo">
+                <i class="fab fa-twitter"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> 首页</a></li>
+                    <li class="active"><a href="#"><i class="fas fa-hashtag"></i> 探索</a></li>
+                    <li><a href="#"><i class="far fa-bell"></i> 通知</a></li>
+                    <li><a href="#"><i class="far fa-envelope"></i> 消息</a></li>
+                    <li><a href="#"><i class="far fa-bookmark"></i> 书签</a></li>
+                    <li><a href="#"><i class="fas fa-list-alt"></i> 列表</a></li>
+                    <li><a href="profile.html"><i class="far fa-user"></i> 个人资料</a></li>
+                    <li><a href="#"><i class="fas fa-ellipsis-h"></i> 更多</a></li>
+                    <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> 登录页面</a></li>
+                </ul>
+            </nav>
+            <button class="tweet-btn">发微博</button>
+            <div class="user-profile">
+                <div class="emoji-avatar">
+                    <span class="emoji">😄</span>
+                </div>
+                <div class="user-info">
+                    <h4>用户名</h4>
+                    <p>@username</p>
+                </div>
+                <i class="fas fa-ellipsis-h"></i>
+            </div>
+        </aside>
+
+        <!-- 中间内容区域 -->
+        <main class="main-content">
+            <!-- 话题头部 -->
+            <header class="topic-header">
+                <div class="topic-nav">
+                    <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i></a>
+                    <div>
+                        <h2>#人工智能</h2>
+                        <span class="tweet-count">2.5万条微博</span>
+                    </div>
+                </div>
+                
+                <div class="topic-banner">
+                    <img src="https://picsum.photos/seed/topic/1000/300" alt="人工智能话题封面">
+                </div>
+                
+                <div class="topic-info">
+                    <h2>#人工智能</h2>
+                    <p class="topic-desc">关于人工智能的最新研究、应用和讨论。探索AI如何改变我们的生活和工作方式。</p>
+                    
+                    <div class="topic-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>科技 · 热门话题</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-users"></i>
+                            <span>5,280人正在讨论</span>
+                        </div>
+                    </div>
+                    
+                    <button class="follow-topic-btn">关注话题</button>
+                </div>
+                
+                <div class="topic-tabs">
+                    <div class="tab active">热门</div>
+                    <div class="tab">最新</div>
+                    <div class="tab">图片</div>
+                    <div class="tab">视频</div>
+                </div>
+            </header>
+
+            <!-- 话题微博时间线 -->
+            <div class="timeline">
+                <!-- 微博示例 -->
+                <div class="tweet">
+                    <div class="emoji-avatar">
+                        <span class="emoji">🤖</span>
+                    </div>
+                    <div class="tweet-content">
+                        <div class="tweet-header">
+                            <h4>人工智能研究院</h4>
+                            <span class="username">@AIResearch</span>
+                            <span class="tweet-time">· 3小时前</span>
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                        <p class="tweet-text">我们团队最新的研究成果：基于深度学习的自然语言处理模型，准确率提高了15%！#人工智能 #机器学习</p>
+                        <div class="tweet-image">
+                            <img src="https://via.placeholder.com/500x300?text=AI+Research" alt="研究图片">
+                        </div>
+                        <div class="tweet-actions">
+                            <div class="action">
+                                <i class="far fa-comment"></i>
+                                <span>56</span>
+                            </div>
+                            <div class="action">
+                                <i class="fas fa-retweet"></i>
+                                <span>124</span>
+                            </div>
+                            <div class="action">
+                                <i class="far fa-heart"></i>
+                                <span>348</span>
+                            </div>
+                            <div class="action">
+                                <i class="fas fa-share-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 更多微博... -->
+                <div class="tweet">
+                    <div class="emoji-avatar">
+                        <span class="emoji">👨‍💻</span>
+                    </div>
+                    <div class="tweet-content">
+                        <div class="tweet-header">
+                            <h4>科技爱好者</h4>
+                            <span class="username">@techFan</span>
+                            <span class="tweet-time">· 昨天</span>
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                        <p class="tweet-text">ChatGPT的能力真是令人惊叹！它不仅能写文章，还能写代码，甚至能作诗和讲笑话。AI的未来将会是怎样？ #人工智能 #ChatGPT</p>
+                        <div class="tweet-actions">
+                            <div class="action">
+                                <i class="far fa-comment"></i>
+                                <span>42</span>
+                            </div>
+                            <div class="action">
+                                <i class="fas fa-retweet"></i>
+                                <span>78</span>
+                            </div>
+                            <div class="action">
+                                <i class="far fa-heart"></i>
+                                <span>215</span>
+                            </div>
+                            <div class="action">
+                                <i class="fas fa-share-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- 右侧栏 -->
+        <aside class="sidebar right-sidebar">
+            <!-- 搜索框 -->
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="搜索微博">
+            </div>
+            
+            <!-- 相关话题 -->
+            <div class="related-topics">
+                <h3>相关话题</h3>
+                <div class="trend-item">
+                    <span class="trend-category">科技 · 热门</span>
+                    <h4>#机器学习</h4>
+                    <span class="trend-count">1.8万条微博</span>
+                </div>
+                <div class="trend-item">
+                    <span class="trend-category">科技 · 热门</span>
+                    <h4>#深度学习</h4>
+                    <span class="trend-count">1.2万条微博</span>
+                </div>
+                <div class="trend-item">
+                    <span class="trend-category">科技 · 热门</span>
+                    <h4>#ChatGPT</h4>
+                    <span class="trend-count">3.5万条微博</span>
+                </div>
+                <a href="#" class="show-more">显示更多</a>
+            </div>
+            
+            <!-- 话题专家 -->
+            <div class="topic-experts">
+                <h3>话题专家</h3>
+                <div class="follow-item">
+                    <div class="emoji-avatar">
+                        <span class="emoji">👩‍🔬</span>
+                    </div>
+                    <div class="user-info">
+                        <h4>李飞飞</h4>
+                        <span class="username">@FeiFeiLi</span>
+                    </div>
+                    <button class="follow-btn">关注</button>
+                </div>
+                <div class="follow-item">
+                    <div class="emoji-avatar">
+                        <span class="emoji">👨‍🏫</span>
+                    </div>
+                    <div class="user-info">
+                        <h4>吴恩达</h4>
+                        <span class="username">@AndrewNg</span>
+                    </div>
+                    <button class="follow-btn">关注</button>
+                </div>
+                <a href="#" class="show-more">显示更多</a>
+            </div>
+            
+            <!-- 页脚 -->
+            <footer class="footer">
+                <a href="#">服务条款</a>
+                <a href="#">隐私政策</a>
+                <a href="#">Cookie政策</a>
+                <a href="#">无障碍</a>
+                <a href="#">广告信息</a>
+                <a href="#">更多...</a>
+                <p>© 2023 微博克隆</p>
+            </footer>
+        </aside>
+    </div>
+    
+    <script src="js/main-fixed.js"></script>
+</body>
+</html> 

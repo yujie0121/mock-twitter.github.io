@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>消息 - 微博克隆</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="css/messages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/i18n.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 左侧导航栏 -->
+        <aside class="sidebar left-sidebar">
+            <div class="logo">
+                <i class="fab fa-twitter"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> 首页</a></li>
+                    <li><a href="explore.html"><i class="fas fa-hashtag"></i> 探索</a></li>
+                    <li><a href="notifications.html"><i class="far fa-bell"></i> 通知</a></li>
+                    <li class="active"><a href="messages.html"><i class="far fa-envelope"></i> 消息</a></li>
+                    <li><a href="bookmarks.html"><i class="far fa-bookmark"></i> 书签</a></li>
+                    <li><a href="lists.html"><i class="fas fa-list-alt"></i> 列表</a></li>
+                    <li><a href="profile.html"><i class="far fa-user"></i> 个人资料</a></li>
+                    <li><a href="more.html"><i class="fas fa-ellipsis-h"></i> 更多</a></li>
+                    <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> 登录页面</a></li>
+                </ul>
+            </nav>
+            <button class="tweet-btn">发微博</button>
+            <div class="user-profile">
+                <div class="user-avatar emoji-avatar">
+                    <span class="emoji">😀</span>
+                </div>
+                <div class="user-info">
+                    <h4>用户名</h4>
+                    <p>@username</p>
+                </div>
+                <i class="fas fa-ellipsis-h"></i>
+            </div>
+        </aside>
+
+        <!-- 中间内容区域 -->
+        <main class="main-content">
+            <header class="main-header">
+                <h2>消息</h2>
+                <div class="night-mode-toggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+                <div class="message-actions">
+                    <i class="fas fa-envelope-open"></i>
+                    <i class="fas fa-cog"></i>
+                </div>
+            </header>
+
+            <!-- 消息列表 -->
+            <div class="messages-container">
+                <div class="message-item unread">
+                    <div class="user-avatar emoji-avatar">
+                        <span class="emoji">👩‍💻</span>
+                    </div>
+                    <div class="message-content">
+                        <div class="message-header">
+                            <h4>前端开发者</h4>
+                            <span class="username">@frontEndDev</span>
+                            <span class="message-time">· 10分钟前</span>
+                        </div>
+                        <p class="message-preview">嗨！我看了你分享的文章，关于React Hooks的使用技巧很实用，谢谢分享！</p>
+                    </div>
+                </div>
+                
+                <div class="message-item">
+                    <div class="user-avatar emoji-avatar">
+                        <span class="emoji">🎨</span>
+                    </div>
+                    <div class="message-content">
+                        <div class="message-header">
+                            <h4>设计师小王</h4>
+                            <span class="username">@designerWang</span>
+                            <span class="message-time">· 昨天</span>
+                        </div>
+                        <p class="message-preview">你好！我们上次讨论的UI设计稿已经完成了，我已经上传到共享文件夹，请查收。</p>
+                    </div>
+                </div>
+                
+                <div class="message-item">
+                    <div class="user-avatar emoji-avatar">
+                        <span class="emoji">📚</span>
+                    </div>
+                    <div class="message-content">
+                        <div class="message-header">
+                            <h4>技术书友会</h4>
+                            <span class="username">@techBookClub</span>
+                            <span class="message-time">· 3天前</span>
+                        </div>
+                        <p class="message-preview">下周六我们将举办线下读书会，主题是"深入理解TypeScript"，欢迎参加！</p>
+                    </div>
+                </div>
+                
+                <div class="message-item">
+                    <div class="user-avatar emoji-avatar">
+                        <span class="emoji">🚀</span>
+                    </div>
+                    <div class="message-content">
+                        <div class="message-header">
+                            <h4>科技日报</h4>
+                            <span class="username">@techDaily</span>
+                            <span class="message-time">· 上周</span>
+                        </div>
+                        <p class="message-preview">感谢关注科技日报！我们每周都会发送最新科技资讯简报，如有需要请回复。</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- 右侧栏 -->
+        <aside class="sidebar right-sidebar">
+            <!-- 搜索框 -->
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="搜索消息">
+            </div>
+            
+            <!-- 消息过滤器 -->
+            <div class="message-filters">
+                <h3>过滤消息</h3>
+                <div class="filter-item active">
+                    <i class="fas fa-inbox"></i>
+                    <span>全部消息</span>
+                </div>
+                <div class="filter-item">
+                    <i class="fas fa-user-friends"></i>
+                    <span>好友消息</span>
+                </div>
+                <div class="filter-item">
+                    <i class="fas fa-bell"></i>
+                    <span>未读消息</span>
+                    <span class="badge">2</span>
+                </div>
+                <div class="filter-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>已验证用户</span>
+                </div>
+            </div>
+            
+            <!-- 页脚 -->
+            <footer class="footer">
+                <a href="#">服务条款</a>
+                <a href="#">隐私政策</a>
+                <a href="#">Cookie政策</a>
+                <a href="#">无障碍</a>
+                <a href="#">广告信息</a>
+                <a href="#">更多...</a>
+                <p>© 2023 微博克隆</p>
+            </footer>
+        </aside>
+    </div>
+    
+    <script src="js/main-fixed.js"></script>
+    <script src="js/messages.js"></script>
+    <script src="js/theme-manager.js"></script>
+    <script src="js/i18n.js"></script>
+</body>
+</html> 

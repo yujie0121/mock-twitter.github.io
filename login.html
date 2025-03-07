@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>微博克隆 - 登录</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="css/i18n.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-left">
+            <div class="login-background">
+                <i class="fab fa-twitter twitter-logo-bg"></i>
+            </div>
+        </div>
+        <div class="login-right">
+            <div class="login-content">
+                <i class="fab fa-twitter twitter-logo"></i>
+                <h1>登录微博</h1>
+                <div class="login-form">
+                    <input type="text" placeholder="手机号、邮箱或用户名">
+                    <input type="password" placeholder="密码">
+                    <button class="login-btn">登录</button>
+                </div>
+                <div class="login-options">
+                    <a href="#">忘记密码？</a>
+                    <span>·</span>
+                    <a href="register.html">注册微博</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="night-mode-toggle">
+        <i class="fas fa-moon"></i>
+    </div>
+    
+    <script>
+        document.querySelector('.login-btn').addEventListener('click', function() {
+            window.location.href = 'index.html';
+        });
+    </script>
+    <script src="js/theme-manager.js"></script>
+    <script src="js/i18n.js"></script>
+</body>
+</html> 

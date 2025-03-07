@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>探索 - YUJIE</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="css/explore.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/i18n.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 左侧导航栏 -->
+        <aside class="sidebar left-sidebar">
+            <div class="logo">
+                <i class="fab fa-twitter"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> 首页</a></li>
+                    <li class="active"><a href="explore.html"><i class="fas fa-hashtag"></i> 探索</a></li>
+                    <li><a href="notifications.html"><i class="far fa-bell"></i> 通知</a></li>
+                    <li><a href="messages.html"><i class="far fa-envelope"></i> 消息</a></li>
+                    <li><a href="bookmarks.html"><i class="far fa-bookmark"></i> 书签</a></li>
+                    <li><a href="lists.html"><i class="fas fa-list-alt"></i> 列表</a></li>
+                    <li><a href="profile.html"><i class="far fa-user"></i> 个人资料</a></li>
+                    <li><a href="more.html"><i class="fas fa-ellipsis-h"></i> 更多</a></li>
+                    <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> 登录页面</a></li>
+                </ul>
+            </nav>
+            <button class="tweet-btn">发微博</button>
+            <div class="user-profile">
+                <div class="user-avatar emoji-avatar">
+                    <span class="emoji">😀</span>
+                </div>
+                <div class="user-info">
+                    <h4>用户名</h4>
+                    <p>@username</p>
+                </div>
+                <i class="fas fa-ellipsis-h"></i>
+            </div>
+        </aside>
+
+        <!-- 中间内容区域 -->
+        <main class="main-content">
+            <header class="main-header">
+                <h2>探索</h2>
+                <div class="search-box header-search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="搜索话题、用户和微博">
+                </div>
+                <div class="night-mode-toggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+            </header>
+
+            <!-- 探索页顶部大图轮播 -->
+            <div class="explore-slider">
+                <div class="explore-slide active">
+                    <img src="https://picsum.photos/seed/explore1/1200/400" alt="热门话题">
+                    <div class="slide-content">
+                        <span class="slide-label">热门话题</span>
+                        <h2>#科技创新</h2>
+                        <p>探索未来科技的无限可能</p>
+                        <a href="topic.html" class="slide-btn">了解更多</a>
+                    </div>
+                </div>
+                <div class="explore-slide">
+                    <img src="https://picsum.photos/seed/explore2/1200/400" alt="艺术与文化">
+                    <div class="slide-content">
+                        <span class="slide-label">艺术与文化</span>
+                        <h2>#当代艺术</h2>
+                        <p>感受艺术带来的视觉冲击</p>
+                        <a href="#" class="slide-btn">了解更多</a>
+                    </div>
+                </div>
+                <div class="explore-slide">
+                    <img src="https://picsum.photos/seed/explore3/1200/400" alt="环球旅行">
+                    <div class="slide-content">
+                        <span class="slide-label">环球旅行</span>
+                        <h2>#自然探索</h2>
+                        <p>发现世界各地的自然奇观</p>
+                        <a href="#" class="slide-btn">了解更多</a>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <span class="slide-dot active" data-slide="0"></span>
+                    <span class="slide-dot" data-slide="1"></span>
+                    <span class="slide-dot" data-slide="2"></span>
+                </div>
+            </div>
+
+            <!-- 探索内容分类导航 -->
+            <div class="explore-categories">
+                <div class="category-tabs">
+                    <div class="tab active">推荐</div>
+                    <div class="tab">热门</div>
+                    <div class="tab">新闻</div>
+                    <div class="tab">科技</div>
+                    <div class="tab">艺术</div>
+                    <div class="tab">体育</div>
+                    <div class="tab">娱乐</div>
+                </div>
+            </div>
+
+            <!-- 话题网格布局 -->
+            <section class="section-title-container">
+                <h3 class="section-title">探索话题</h3>
+                <a href="#" class="section-more">查看全部</a>
+            </section>
+            
+            <div class="explore-grid">
+                <div class="grid-item large">
+                    <img src="https://picsum.photos/seed/ai/600/400" alt="人工智能">
+                    <div class="grid-item-content">
+                        <span class="grid-category">科技</span>
+                        <h4>#人工智能</h4>
+                        <p>2.5万条微博</p>
+                    </div>
+                </div>
+                <div class="grid-item medium">
+                    <img src="https://picsum.photos/seed/travel/400/300" alt="旅行风景">
+                    <div class="grid-item-content">
+                        <span class="grid-category">旅行</span>
+                        <h4>#夏日旅行</h4>
+                        <p>1.8万条微博</p>
+                    </div>
+                </div>
+                <div class="grid-item medium">
+                    <img src="https://picsum.photos/seed/food/400/300" alt="美食">
+                    <div class="grid-item-content">
+                        <span class="grid-category">美食</span>
+                        <h4>#家常菜</h4>
+                        <p>1.2万条微博</p>
+                    </div>
+                </div>
+                <div class="grid-item small">
+                    <img src="https://picsum.photos/seed/music/300/200" alt="音乐">
+                    <div class="grid-item-content">
+                        <span class="grid-category">音乐</span>
+                        <h4>#新歌发布</h4>
+                        <p>9千条微博</p>
+                    </div>
+                </div>
+                <div class="grid-item small">
+                    <img src="https://picsum.photos/seed/art/300/200" alt="艺术">
+                    <div class="grid-item-content">
+                        <span class="grid-category">艺术</span>
+                        <h4>#艺术展览</h4>
+                        <p>7千条微博</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 当前热门话题 -->
+            <section class="section-title-container">
+                <h3 class="section-title">当前热门话题</h3>
+                <a href="#" class="section-more">更多热门</a>
+            </section>
+            
+            <div class="trending-topics">
+                <div class="trend-card">
+                    <div class="trend-rank">01</div>
+                    <div class="trend-content">
+                        <span class="trend-category">科技 · 热门</span>
+                        <h4 class="trend-title">#人工智能</h4>
+                        <p class="trend-desc">AI技术如何改变我们的生活和工作方式</p>
+                        <span class="trend-count">2.5万条微博</span>
+                    </div>
+                    <a href="topic.html" class="trend-link"><i class="fas fa-chevron-right"></i></a>
+                </div>
+
+                <div class="trend-card">
+                    <div class="trend-rank">02</div>
+                    <div class="trend-content">
+                        <span class="trend-category">娱乐 · 热门</span>
+                        <h4 class="trend-title">#电影推荐</h4>
+                        <p class="trend-desc">最新上映的精彩电影推荐</p>
+                        <span class="trend-count">1.8万条微博</span>
+                    </div>
+                    <a href="#" class="trend-link"><i class="fas fa-chevron-right"></i></a>
+                </div>
+
+                <div class="trend-card">
+                    <div class="trend-rank">03</div>
+                    <div class="trend-content">
+                        <span class="trend-category">体育 · 热门</span>
+                        <h4 class="trend-title">#NBA总决赛</h4>
+                        <p class="trend-desc">NBA总决赛激烈对决，谁将夺得最终胜利？</p>
+                        <span class="trend-count">3.2万条微博</span>
+                    </div>
+                    <a href="#" class="trend-link"><i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+
+            <!-- 推荐内容 -->
+            <section class="section-title-container">
+                <h3 class="section-title">为你推荐</h3>
+                <a href="#" class="section-more">查看更多</a>
+            </section>
+            
+            <div class="recommended-content">
+                <div class="content-card">
+                    <img src="https://picsum.photos/seed/rec1/600/300" alt="推荐内容" class="card-image">
+                    <div class="card-meta">
+                        <div class="user-avatar emoji-avatar small">
+                            <span class="emoji">📱</span>
+                        </div>
+                        <span class="user-name">科技评论</span>
+                        <span class="card-time">3小时前</span>
+                    </div>
+                    <h4 class="card-title">2023年值得关注的十大科技趋势</h4>
+                    <p class="card-desc">从人工智能到量子计算，这些技术将改变未来十年...</p>
+                    <div class="card-stats">
+                        <span><i class="far fa-eye"></i> 2.3万</span>
+                        <span><i class="far fa-comment"></i> 312</span>
+                        <span><i class="far fa-heart"></i> 1.5k</span>
+                    </div>
+                </div>
+                
+                <div class="content-card">
+                    <img src="https://picsum.photos/seed/rec2/600/300" alt="推荐内容" class="card-image">
+                    <div class="card-meta">
+                        <div class="user-avatar emoji-avatar small">
+                            <span class="emoji">🌍</span>
+                        </div>
+                        <span class="user-name">环球旅行</span>
+                        <span class="card-time">昨天</span>
+                    </div>
+                    <h4 class="card-title">5个被低估的旅行目的地</h4>
+                    <p class="card-desc">远离拥挤的旅游景点，探索这些隐藏的旅行胜地...</p>
+                    <div class="card-stats">
+                        <span><i class="far fa-eye"></i> 1.8万</span>
+                        <span><i class="far fa-comment"></i> 156</span>
+                        <span><i class="far fa-heart"></i> 2.1k</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- 右侧栏 -->
+        <aside class="sidebar right-sidebar">
+            <!-- 搜索框 -->
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="搜索微博">
+            </div>
+            
+            <!-- 可能感兴趣的话题 -->
+            <div class="interest-topics">
+                <h3>你可能感兴趣的话题</h3>
+                <div class="interest-topic-item">
+                    <div class="topic-icon"><i class="fas fa-laptop-code"></i></div>
+                    <div class="topic-info">
+                        <h4>#程序员日常</h4>
+                        <p>1.3万人正在讨论</p>
+                    </div>
+                    <button class="follow-btn small">关注</button>
+                </div>
+                
+                <div class="interest-topic-item">
+                    <div class="topic-icon"><i class="fas fa-camera"></i></div>
+                    <div class="topic-info">
+                        <h4>#摄影技巧</h4>
+                        <p>8千人正在讨论</p>
+                    </div>
+                    <button class="follow-btn small">关注</button>
+                </div>
+                
+                <div class="interest-topic-item">
+                    <div class="topic-icon"><i class="fas fa-book"></i></div>
+                    <div class="topic-info">
+                        <h4>#读书分享</h4>
+                        <p>5千人正在讨论</p>
+                    </div>
+                    <button class="follow-btn small">关注</button>
+                </div>
+                
+                <a href="#" class="show-more">显示更多</a>
+            </div>
+            
+            <!-- 推荐关注 -->
+            <div class="who-to-follow">
+                <h3>推荐关注</h3>
+                <div class="follow-item">
+                    <div class="user-avatar emoji-avatar">
+                        <span class="emoji">🚀</span>
+                    </div>
+                    <div class="user-info">
+                        <h4>科技日报</h4>
+                        <span class="username">@techDaily</span>
+                    </div>
+                    <button class="follow-btn">关注</button>
+                </div>
+                <div class="follow-item">
+                    <div class="user-avatar emoji-avatar">
+                        <span class="emoji">🌎</span>
+                    </div>
+                    <div class="user-info">
+                        <h4>环球时报</h4>
+                        <span class="username">@globalTimes</span>
+                    </div>
+                    <button class="follow-btn">关注</button>
+                </div>
+                <a href="#" class="show-more">显示更多</a>
+            </div>
+            
+            <!-- 页脚 -->
+            <footer class="footer">
+                <a href="#">服务条款</a>
+                <a href="#">隐私政策</a>
+                <a href="#">Cookie政策</a>
+                <a href="#">无障碍</a>
+                <a href="#">广告信息</a>
+                <a href="#">更多...</a>
+                <p>© 2023 YUJIE</p>
+            </footer>
+        </aside>
+    </div>
+    
+    <script src="js/main-fixed.js"></script>
+    <script src="js/explore.js"></script>
+    <script src="js/theme-manager.js"></script>
+    <script src="js/i18n.js"></script>
+</body>
+</html> 

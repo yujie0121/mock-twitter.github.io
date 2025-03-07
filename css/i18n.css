@@ -1,0 +1,372 @@
+/* 国际化相关样式 */
+
+.sidebar-language-toggle {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    color: #0f1419;
+}
+
+.sidebar-language-toggle:hover {
+    background-color: rgba(29, 161, 242, 0.1);
+}
+
+body.dark-mode .sidebar-language-toggle {
+    color: #fff;
+}
+
+body.dark-mode .sidebar-language-toggle:hover {
+    background-color: rgba(29, 161, 242, 0.2);
+}
+
+.sidebar-language-toggle i {
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.sidebar-language-toggle span {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* 媒体查询：在小屏幕上减小图标和文字 */
+@media (max-width: 1280px) {
+    .sidebar-language-toggle {
+        padding: 10px;
+        justify-content: center;
+    }
+    
+    .sidebar-language-toggle i {
+        margin-right: 0;
+    }
+    
+    .sidebar-language-toggle span {
+        display: none;
+    }
+}
+
+/* 统一控制按钮样式 */
+.control-btn-group {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    height: 40px;
+}
+
+/* 统一按钮基础样式 */
+.night-mode-toggle,
+.language-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f7f9fa;
+    color: #1da1f2;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.night-mode-toggle:hover,
+.language-toggle:hover {
+    background-color: rgba(29, 161, 242, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* 暗色模式样式统一 */
+body.dark-mode .night-mode-toggle,
+body.dark-mode .language-toggle {
+    background-color: #192734;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode .night-mode-toggle:hover,
+body.dark-mode .language-toggle:hover {
+    background-color: rgba(29, 161, 242, 0.2);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* 按钮图标大小统一 */
+.night-mode-toggle i,
+.language-toggle i {
+    font-size: 18px;
+}
+
+/* 登录页面按钮样式特殊处理 */
+.login-container .night-mode-toggle,
+.login-container .language-toggle {
+    position: absolute;
+    top: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container .night-mode-toggle {
+    right: 70px;
+}
+
+.login-container .language-toggle {
+    right: 20px;
+}
+
+body.dark-mode .login-container .night-mode-toggle,
+body.dark-mode .login-container .language-toggle {
+    background-color: rgba(25, 39, 52, 0.9);
+}
+
+/* 保持按钮与其他元素的间距 */
+.list-actions .language-toggle,
+.notification-settings .language-toggle,
+.message-actions .language-toggle,
+.bookmarks-actions .language-toggle,
+.header-actions .language-toggle {
+    margin-left: 10px;
+}
+
+/* 确保右上角固定定位时的样式 */
+body > .language-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode > .language-toggle {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* 调整语言切换按钮与夜间模式按钮的布局 */
+.night-mode-toggle {
+    margin-right: 10px; /* 为后面的语言按钮留出空间 */
+}
+
+/* 将语言切换按钮和夜间模式按钮放在同一个容器中时的样式 */
+.night-mode-toggle + .language-toggle {
+    margin-left: 0; /* 去除额外的左边距 */
+}
+
+/* 头部操作区域样式调整 */
+.main-header > div,
+.list-actions,
+.message-actions,
+.notification-settings,
+.bookmarks-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* 使用gap属性控制按钮之间的间距 */
+}
+
+/* 为小屏幕设备调整样式 */
+@media (max-width: 1200px) {
+    .sidebar-language-toggle {
+        justify-content: center;
+    }
+    
+    .sidebar-language-toggle span {
+        display: none;
+    }
+}
+
+/* 移动设备适配 */
+@media (max-width: 768px) {
+    .language-toggle span {
+        display: none;
+    }
+    
+    .language-toggle {
+        padding: 8px;
+    }
+}
+
+/* 页脚中的语言切换按钮样式 */
+.footer-language-toggle {
+    display: inline-block;
+    color: #536471;
+    font-size: 13px;
+    margin-right: 12px;
+    text-decoration: none;
+}
+
+.footer-language-toggle:hover {
+    text-decoration: underline;
+    color: #1da1f2;
+}
+
+.footer-language-toggle i {
+    margin-right: 4px;
+}
+
+body.dark-mode .footer-language-toggle {
+    color: #8899a6;
+}
+
+body.dark-mode .footer-language-toggle:hover {
+    color: #1da1f2;
+}
+
+/* 语言下拉菜单样式 */
+.language-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.language-dropdown-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f7f9fa;
+    color: #1da1f2;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.language-dropdown-btn:hover {
+    background-color: rgba(29, 161, 242, 0.1);
+    transform: translateY(-2px);
+}
+
+.language-dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    min-width: 160px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border-radius: 8px;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.language-dropdown.active .language-dropdown-content {
+    display: block;
+    animation: fadeIn 0.2s;
+}
+
+.language-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: #0f1419;
+    transition: background-color 0.2s;
+}
+
+.language-option:hover {
+    background-color: rgba(29, 161, 242, 0.1);
+}
+
+.language-option.active {
+    font-weight: 600;
+    color: #1da1f2;
+}
+
+.language-name {
+    font-size: 15px;
+}
+
+/* 暗色模式样式 */
+body.dark-mode .language-dropdown-btn {
+    background-color: #192734;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+body.dark-mode .language-dropdown-content {
+    background-color: #15202b;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+body.dark-mode .language-option {
+    color: #fff;
+}
+
+body.dark-mode .language-option:hover {
+    background-color: rgba(29, 161, 242, 0.2);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* 优化的语言切换按钮 */
+.lang-switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    min-width: 50px;
+    border-radius: 18px;
+    background-color: rgba(29, 161, 242, 0.1);
+    color: #1da1f2;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    padding: 0 12px;
+    margin-left: 12px;
+    border: none;
+    outline: none;
+}
+
+.lang-switch:hover {
+    background-color: rgba(29, 161, 242, 0.2);
+    transform: translateY(-1px);
+}
+
+.lang-switch:active {
+    transform: translateY(0);
+}
+
+body.dark-mode .lang-switch {
+    background-color: rgba(29, 161, 242, 0.2);
+}
+
+body.dark-mode .lang-switch:hover {
+    background-color: rgba(29, 161, 242, 0.3);
+}
+
+/* 美化控制按钮组 */
+.control-btn-group {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    height: 40px;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .lang-switch {
+        min-width: 40px;
+        padding: 0 8px;
+    }
+    
+    .lang-switch-text-full {
+        display: none;
+    }
+}
+
+/* 切换动画 */
+.lang-switch-animation {
+    animation: pulse 0.3s ease;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+} 

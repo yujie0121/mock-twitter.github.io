@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YUJIE</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="css/i18n.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 左侧导航栏 -->
+        <aside class="sidebar left-sidebar">
+            <div class="logo">
+                <i class="fab fa-twitter"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li class="active"><a href="index.html"><i class="fas fa-home"></i> 首页</a></li>
+                    <li><a href="explore.html"><i class="fas fa-hashtag"></i> 探索</a></li>
+                    <li><a href="notifications.html"><i class="far fa-bell"></i> 通知</a></li>
+                    <li><a href="messages.html"><i class="far fa-envelope"></i> 消息</a></li>
+                    <li><a href="bookmarks.html"><i class="far fa-bookmark"></i> 书签</a></li>
+                    <li><a href="lists.html"><i class="fas fa-list-alt"></i> 列表</a></li>
+                    <li><a href="profile.html"><i class="far fa-user"></i> 个人资料</a></li>
+                    <li><a href="more.html"><i class="fas fa-ellipsis-h"></i> 更多</a></li>
+                    <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> 登录页面</a></li>
+                </ul>
+            </nav>
+            <button class="tweet-btn">发微博</button>
+            <div class="user-profile">
+                <div class="user-avatar emoji-avatar">
+                    <span class="emoji">😀</span>
+                </div>
+                <div class="user-info">
+                    <h4>用户名</h4>
+                    <p>@username</p>
+                </div>
+                <i class="fas fa-ellipsis-h"></i>
+            </div>
+        </aside>
+
+        <!-- 中间内容区域 -->
+        <main class="main-content">
+            <header class="main-header">
+                <h2>首页</h2>
+                <div class="tabs">
+                    <div class="tab active">推荐</div>
+                    <div class="tab">关注</div>
+                </div>
+                <div class="night-mode-toggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+            </header>
+
+            <!-- 发布微博区域 -->
+            <div class="compose-tweet">
+                <div class="user-avatar emoji-avatar">
+                    <span class="emoji">😀</span>
+                </div>
+                <div class="compose-form">
+                    <textarea placeholder="有什么新鲜事？"></textarea>
+                    <div class="compose-options">
+                        <div class="media-options">
+                            <i class="far fa-image"></i>
+                            <i class="fas fa-poll"></i>
+                            <i class="far fa-smile"></i>
+                            <i class="far fa-calendar"></i>
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <button class="tweet-submit-btn">发布</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 微博时间线 -->
+            <div class="timeline">
+                <!-- 微博1 -->
+                <div class="tweet">
+                    <div class="user-avatar emoji-avatar">
+                        <span class="emoji">🧠</span>
+                    </div>
+                    <div class="tweet-content">
+                        <div class="tweet-header">
+                            <h4>科技观察</h4>
+                            <span class="username">@techObserver</span>
+                            <span class="tweet-time">· 3小时前</span>
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                        <p class="tweet-text">
+                            最新研究显示，人工智能在医疗领域的应用正在迅速增长。AI辅助诊断系统可以提高早期癌症检测率达40%。
+                            #人工智能 #医疗科技
+                        </p>
+                        <div class="tweet-image">
+                            <img src="https://picsum.photos/seed/ai1/800/500" alt="AI医疗应用">
+                        </div>
+                        <div class="tweet-actions">
+                            <div class="action">
+                                <i class="far fa-comment"></i>
+                                <span>34</span>
+                            </div>
+                            <div class="action">
+                                <i class="fas fa-retweet"></i>
+                                <span>128</span>
+                            </div>
+                            <div class="action">
+                                <i class="far fa-heart"></i>
+                                <span>347</span>
+                            </div>
+                            <div class="action">
+                                <i class="far fa-bookmark"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 微博2 -->
+                <div class="tweet">
+                    <div class="user-avatar emoji-avatar">
+                        <span class="emoji">🌍</span>
+                    </div>
+                    <div class="tweet-content">
+                        <div class="tweet-header">
+                            <h4>旅行爱好者</h4>
+                            <span class="username">@travelLover</span>
+                            <span class="tweet-time">· 5小时前</span>
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                        <p class="tweet-text">
+                            周末在杭州西湖度过美好时光，春天的西湖美不胜收！推荐大家有时间可以来走走。
+                            #旅行 #杭州 #西湖
+                        </p>
+                        <div class="tweet-image">
+                            <img src="https://picsum.photos/seed/lake/800/500" alt="杭州西湖">
+                        </div>
+                        <div class="tweet-actions">
+                            <div class="action">
+                                <i class="far fa-comment"></i>
+                                <span>18</span>
+                            </div>
+                            <div class="action">
+                                <i class="fas fa-retweet"></i>
+                                <span>56</span>
+                            </div>
+                            <div class="action">
+                                <i class="far fa-heart"></i>
+                                <span>215</span>
+                            </div>
+                            <div class="action">
+                                <i class="far fa-bookmark"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 微博3 -->
+                <div class="tweet">
+                    <div class="user-avatar emoji-avatar">
+                        <span class="emoji">😀</span>
+                    </div>
+                    <div class="tweet-content">
+                        <div class="tweet-header">
+                            <h4>王五</h4>
+                            <span class="username">@wangwu</span>
+                            <span class="tweet-time">· 昨天</span>
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                        <p class="tweet-text">刚看完新电影《流浪地球2》，特效太震撼了！强烈推荐大家去看！</p>
+                        <div class="tweet-actions">
+                            <div class="action">
+                                <i class="far fa-comment"></i>
+                                <span>86</span>
+                            </div>
+                            <div class="action">
+                                <i class="fas fa-retweet"></i>
+                                <span>53</span>
+                            </div>
+                            <div class="action">
+                                <i class="far fa-heart"></i>
+                                <span>245</span>
+                            </div>
+                            <div class="action">
+                                <i class="fas fa-share-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- 右侧栏 -->
+        <aside class="sidebar right-sidebar">
+            <!-- 搜索框 -->
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="搜索微博">
+            </div>
+            
+            <!-- 热门话题 -->
+            <div class="trends-box">
+                <h3>热门话题</h3>
+                <div class="trend-item">
+                    <span class="trend-category">科技 · 热门</span>
+                    <h4>#人工智能</h4>
+                    <span class="trend-count">2.5万条微博</span>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <div class="trend-item">
+                    <span class="trend-category">娱乐 · 热门</span>
+                    <h4>#电影推荐</h4>
+                    <span class="trend-count">1.8万条微博</span>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <div class="trend-item">
+                    <span class="trend-category">体育 · 热门</span>
+                    <h4>#NBA总决赛</h4>
+                    <span class="trend-count">3.2万条微博</span>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <a href="#" class="show-more">显示更多</a>
+            </div>
+            
+            <!-- 推荐关注 -->
+            <div class="who-to-follow">
+                <h3>推荐关注</h3>
+                <div class="follow-item">
+                    <div class="user-avatar emoji-avatar">
+                        <span class="emoji">🚀</span>
+                    </div>
+                    <div class="user-info">
+                        <h4>科技日报</h4>
+                        <span class="username">@techDaily</span>
+                    </div>
+                    <button class="follow-btn">关注</button>
+                </div>
+                <div class="follow-item">
+                    <div class="user-avatar emoji-avatar">
+                        <span class="emoji">🌎</span>
+                    </div>
+                    <div class="user-info">
+                        <h4>环球时报</h4>
+                        <span class="username">@globalTimes</span>
+                    </div>
+                    <button class="follow-btn">关注</button>
+                </div>
+                <a href="#" class="show-more">显示更多</a>
+            </div>
+            
+            <!-- 通知中心 -->
+            <div class="notifications-box">
+                <h3>最新通知</h3>
+                <div class="notification-item">
+                    <div class="emoji-avatar">
+                        <span class="emoji">😎</span>
+                    </div>
+                    <div class="notification-content">
+                        <p><span class="user-link">科技日报</span> 关注了你</p>
+                        <span class="notification-time">10分钟前</span>
+                    </div>
+                </div>
+                <div class="notification-item">
+                    <div class="emoji-avatar">
+                        <span class="emoji">🤩</span>
+                    </div>
+                    <div class="notification-content">
+                        <p><span class="user-link">张三</span> 喜欢了你的微博</p>
+                        <span class="notification-time">30分钟前</span>
+                    </div>
+                </div>
+                <a href="#" class="show-more">查看所有通知</a>
+            </div>
+            
+            <!-- 页脚 -->
+            <footer class="footer">
+                <a href="#">服务条款</a>
+                <a href="#">隐私政策</a>
+                <a href="#">Cookie政策</a>
+                <a href="#">无障碍</a>
+                <a href="#">广告信息</a>
+                <a href="#">更多...</a>
+                <p>© 2023 YUJIE</p>
+            </footer>
+        </aside>
+    </div>
+    
+    <script src="js/main-fixed.js"></script>
+    <script src="js/theme-manager.js"></script>
+    <script src="js/i18n.js"></script>
+</body>
+</html>

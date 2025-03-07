@@ -1,0 +1,359 @@
+/* 增强列表页面视觉效果 */
+.lists-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.list-card {
+    background-color: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+body.dark-mode .list-card {
+    background-color: #192734;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.list-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.list-card-image {
+    height: 100px;
+    overflow: hidden;
+}
+
+.list-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.list-card:hover .list-card-image img {
+    transform: scale(1.05);
+}
+
+.list-card-header {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+}
+
+.list-cover {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-right: 12px;
+}
+
+.list-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.list-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background-color: #f7f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-right: 12px;
+}
+
+.list-icon.special {
+    background-color: rgba(224, 36, 94, 0.1);
+    color: #e0245e;
+}
+
+body.dark-mode .list-icon {
+    background-color: #38444d;
+}
+
+.list-card-stats {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 16px;
+    border-top: 1px solid #eee;
+    color: #536471;
+    font-size: 13px;
+    margin-top: auto;
+}
+
+body.dark-mode .list-card-stats {
+    border-color: #38444d;
+    color: #8899a6;
+}
+
+/* 优化新建列表按钮 */
+.create-list-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 18px;
+    background-color: #1da1f2;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    gap: 8px;
+}
+
+.create-list-btn:hover {
+    background-color: #1a91da;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    transform: translateY(-1px);
+}
+
+.create-list-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.create-list-btn i {
+    font-size: 14px;
+}
+
+body.dark-mode .create-list-btn {
+    background-color: #1da1f2;
+    color: #fff;
+}
+
+body.dark-mode .create-list-btn:hover {
+    background-color: #1a91da;
+}
+
+/* 优化列表页面标题区域 */
+.main-header {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #e6ecf0;
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    z-index: 10;
+}
+
+body.dark-mode .main-header {
+    border-bottom: 1px solid #38444d;
+    background-color: rgba(21, 32, 43, 0.98);
+}
+
+.list-actions {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* 设置列表页面的响应式设计 */
+@media (max-width: 768px) {
+    .create-list-btn span {
+        display: none;
+    }
+    
+    .create-list-btn {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        border-radius: 50%;
+    }
+    
+    .create-list-btn i {
+        font-size: 16px;
+        margin: 0;
+    }
+}
+
+/* 方案一：作为卡片的样式 */
+.create-card {
+    border: 2px dashed rgba(29, 161, 242, 0.4);
+    background-color: rgba(29, 161, 242, 0.02);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.create-card:hover {
+    background-color: rgba(29, 161, 242, 0.06);
+    border-color: rgba(29, 161, 242, 0.7);
+    transform: translateY(-5px) scale(1.02);
+}
+
+.create-card-content {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.create-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #1da1f2;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+}
+
+/* 方案二：标签栏按钮样式 */
+.tab-btn {
+    margin-left: auto;
+    border-radius: 30px;
+    font-size: 14px;
+    padding: 8px 16px;
+    margin-right: 5px;
+}
+
+/* 方案三：悬浮按钮样式 */
+.floating-create-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #1da1f2;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    z-index: 100;
+    transition: all 0.3s ease;
+}
+
+.floating-create-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode .floating-create-btn {
+    background-color: #1da1f2;
+}
+
+/* 为卡片添加渐变背景效果 */
+.list-card-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 100%);
+}
+
+/* 列表统计数据样式 */
+.list-stats {
+    display: flex;
+    padding: 15px 20px;
+    background-color: rgba(29, 161, 242, 0.05);
+    border-radius: 12px;
+    margin: 15px 20px 0;
+    justify-content: space-between;
+}
+
+body.dark-mode .list-stats {
+    background-color: rgba(29, 161, 242, 0.08);
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-count {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1da1f2;
+}
+
+.stat-label {
+    font-size: 12px;
+    color: #536471;
+    margin-top: 5px;
+}
+
+body.dark-mode .stat-label {
+    color: #8899a6;
+}
+
+/* 优化标签栏设计 */
+.tabs-container {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+}
+
+body.dark-mode .tabs-container {
+    border-bottom: 1px solid #38444d;
+}
+
+.tabs {
+    display: flex;
+    padding: 0 20px;
+}
+
+.tab {
+    padding: 15px 0;
+    margin-right: 20px;
+    font-weight: 600;
+    color: #536471;
+    position: relative;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.tab:hover {
+    color: #1da1f2;
+}
+
+.tab.active {
+    color: #1da1f2;
+}
+
+.tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #1da1f2;
+    border-radius: 4px 4px 0 0;
+}
+
+body.dark-mode .tab {
+    color: #8899a6;
+}
+
+body.dark-mode .tab:hover,
+body.dark-mode .tab.active {
+    color: #1da1f2;
+} 

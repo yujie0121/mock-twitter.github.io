@@ -1,0 +1,94 @@
+/* 夜间模式样式 */
+body.dark-mode {
+    background-color: #15202b;
+    color: #ffffff;
+}
+
+body.dark-mode .main-content {
+    border-color: #38444d;
+}
+
+body.dark-mode .main-header {
+    background-color: rgba(21, 32, 43, 0.85);
+    backdrop-filter: blur(12px);
+    border-color: #38444d;
+}
+
+body.dark-mode .tab.active {
+    color: #ffffff;
+}
+
+body.dark-mode .compose-tweet,
+body.dark-mode .tweet {
+    border-color: #38444d;
+}
+
+body.dark-mode .tweet:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+body.dark-mode .compose-form textarea {
+    color: #ffffff;
+}
+
+body.dark-mode .compose-form textarea::placeholder {
+    color: #8899a6;
+}
+
+body.dark-mode .compose-options {
+    border-color: #38444d;
+}
+
+body.dark-mode .username,
+body.dark-mode .tweet-time,
+body.dark-mode .action,
+body.dark-mode .tweet-header i,
+body.dark-mode .trend-category,
+body.dark-mode .trend-count,
+body.dark-mode .footer,
+body.dark-mode .footer a {
+    color: #8899a6;
+}
+
+body.dark-mode .trends-box,
+body.dark-mode .who-to-follow {
+    background-color: #192734;
+}
+
+body.dark-mode .search-box input {
+    background-color: #253341;
+    color: #ffffff;
+}
+
+body.dark-mode .search-box input:focus {
+    background-color: #15202b;
+    border-color: #1da1f2;
+}
+
+body.dark-mode .search-box i {
+    color: #8899a6;
+}
+
+body.dark-mode .trend-item:hover,
+body.dark-mode .follow-item:hover,
+body.dark-mode .left-sidebar nav ul li:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .user-profile:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* 夜间模式图标切换效果 */
+.night-mode-toggle {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.night-mode-toggle i {
+    transition: all 0.3s ease;
+}
+
+body.dark-mode .night-mode-toggle i.fa-sun {
+    color: #ffd700;
+} 
